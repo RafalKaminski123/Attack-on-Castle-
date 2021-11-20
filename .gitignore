@@ -1,0 +1,94 @@
+# =============== #
+# Unity generated #
+# =============== #
+/rafal.kaminski-2project/[Ll]ibrary/
+/rafal.kaminski-2project/[Tt]emp/
+/rafal.kaminski-2project/[Oo]bj/
+/rafal.kaminski-2project/[Bb]uild/
+/rafal.kaminski-2project/[Bb]uilds/
+/rafal.kaminski-2project/[Ll]ogs/
+/rafal.kaminski-2project/Assets/AssetStoreTools*
+/rafal.kaminski-2project/UnityPackageManager
+
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+/rafal.kaminski-2project/.consulo/
+/rafal.kaminski-2project/.vs/
+/rafal.kaminski-2project/ExportedObj/
+*.svd
+*.userprefs
+*.csproj
+*.pidb
+*.suo
+*.sln
+*.user
+*.unityproj
+*.booproj
+*.tmp
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.vscode
+
+# ====================== #
+# Gradle cache directory #
+# ====================== #
+/rafal.kaminski-2project/.gradle/
+
+# ============================= #
+# Unity3D generated meta files  #
+# ============================= #
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# ======================================== #
+# Unity3D generated file on crash reports  #
+# ======================================== #
+sysinfo.txt
+*.stackdump
+
+# ======================================== #
+# Crashlytics generated file               #
+# ======================================== #
+crashlytics-build.properties
+
+# ==================== #
+# Builds               #
+# ==================== #
+*.apk
+*.unitypackage
+
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+[Tt]humbs.db
+[Dd]esktop.ini
+
+# =============== #
+#      Other      #
+# =============== #
+*.blend1
+*.orig
+*.orig.meta
+*.blend1.meta
+
+# =============== #
+#    Whiteboard   #
+# =============== #
+rafal.kaminski-2project.rar
+rafal.kaminski-2project.7z
+
+
+# =============== #
+#       Rider	  #
+# =============== #
+/rafal.kaminski-2project/.idea/
