@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - PlayerTwo
+  - Floor
+  - Enemy
+  - Break
+  - Trap
+  - Key
   layers:
   - Default
   - TransparentFX
