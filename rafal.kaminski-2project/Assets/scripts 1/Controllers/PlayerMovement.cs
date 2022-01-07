@@ -68,7 +68,7 @@ public class PlayerMovement : MonoBehaviour
     void PlayerRaycast()
     {
             RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down);
-        if (hit != null && hit.collider != null && hit.distance < bottomPlayerDistance && hit.collider.tag == "Enemy")
+        if ( hit.collider != null && hit.distance < bottomPlayerDistance && hit.collider.tag == "Enemy")
         {
             GetComponent<Rigidbody2D>().AddForce(Vector2.up * 100);
 
@@ -79,7 +79,7 @@ public class PlayerMovement : MonoBehaviour
             hit.collider.gameObject.GetComponent<BoxCollider2D> ().enabled = false;
             hit.collider.gameObject.GetComponent<EnemyMove>().enabled = false;
         }
-        if ( hit != null && hit.collider != null && hit.distance < bottomPlayerDistance && hit.collider.tag != "Enemy")
+        if ( hit.collider != null && hit.distance < bottomPlayerDistance && hit.collider.tag != "Enemy")
         {
             isGrounded = true;
         }

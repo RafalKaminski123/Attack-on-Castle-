@@ -5,16 +5,22 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
+
 public class ScoreSystem : MonoBehaviour
 {
-    private float timeCount = 121;
+    public WinLossController winLossController;
+    private float timeCount;
+    public float startTime = 11f;
     public int playerScore = 0;
-    public GameObject timeCountUI;
-    public GameObject playerScoreUI;
+    public TextMeshProUGUI timeCountUI;
+    public TextMeshProUGUI playerScoreUI;
+    public TextMeshProUGUI endScore;
+    public TextMeshProUGUI lostScore;
 
 
     private void Start()
     {
+        timeCount = startTime;
         DataManagement.dataManagement.GameLoad();
        
     }
@@ -22,12 +28,16 @@ public class ScoreSystem : MonoBehaviour
     void Update()
     {
         
-        timeCount -= Time.deltaTime;
-        timeCountUI.gameObject.GetComponent<TextMeshProUGUI>().text = ("Time Count:" + (int)timeCount);
-        playerScoreUI.gameObject.GetComponent<TextMeshProUGUI>().text = ("Score:" + playerScore);
-        if (timeCount < 0.1f)
+        timeCount -= 1 * Time.deltaTime;
+        timeCountUI.text = "Time Count:" + (int)timeCount;
+        playerScoreUI.text = "Score:" + playerScore;
+        endScore.text = ("Score:" + playerScore);
+        lostScore.text = ("Score:" + playerScore);
+
+        if (timeCount <= 0)
         {
-            SceneManager.LoadScene("Game");
+            timeCount = 0;
+            SceneManager.LoadScene("Menu");
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
