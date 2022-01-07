@@ -3777,12 +3777,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 225676205}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.967575, y: 318.09683, z: 337.9859}
+  m_LocalPosition: {x: 2.277588, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 662893255}
-  m_Father: {fileID: 744530553}
-  m_RootOrder: 0
+  m_Father: {fileID: 1682412777}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &226363912
 PrefabInstance:
@@ -14388,7 +14388,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -140.8}
+  m_AnchoredPosition: {x: -12, y: -140.8}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &361352493
@@ -22655,8 +22655,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -13.69, y: -318.09683, z: -337.9859}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 225676206}
+  m_Children: []
   m_Father: {fileID: 1682412777}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -28077,6 +28076,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c80ea363d7f41c148886367984262e99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  winLossController: {fileID: 0}
+  startTime: 121
   playerScore: 0
   timeCountUI: {fileID: 161146945}
   playerScoreUI: {fileID: 1840246506}
@@ -29110,7 +29111,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -11.1, y: 71}
+  m_AnchoredPosition: {x: 1, y: 63}
   m_SizeDelta: {x: 327.15308, y: 129.6719}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1142665942
@@ -29160,8 +29161,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -31894,7 +31895,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 60}
+  m_AnchoredPosition: {x: -21.9, y: 60}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1337963698
@@ -31944,8 +31945,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -31980,7 +31981,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -65.28873, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -36315,7 +36316,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -54}
+  m_AnchoredPosition: {x: 0.2, y: -54.8}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1668828267
@@ -36528,6 +36529,7 @@ Transform:
   - {fileID: 1088939942}
   - {fileID: 1300736810}
   - {fileID: 1845783188}
+  - {fileID: 225676206}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -44640,11 +44642,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8706332031705278217, guid: 45ca15f4228ee3c44b067471130464b7, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 8706332031705278217, guid: 45ca15f4228ee3c44b067471130464b7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -54
+      value: -54.8
       objectReference: {fileID: 0}
     - target: {fileID: 8706332031705278217, guid: 45ca15f4228ee3c44b067471130464b7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

@@ -10,7 +10,7 @@ public class ScoreSystem : MonoBehaviour
 {
     public WinLossController winLossController;
     private float timeCount;
-    public float startTime = 11f;
+    public float startTime = 121f;
     public int playerScore = 0;
     public TextMeshProUGUI timeCountUI;
     public TextMeshProUGUI playerScoreUI;
